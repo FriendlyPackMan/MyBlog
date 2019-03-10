@@ -7,5 +7,8 @@ class Article(models.Model):
     date = models.DateTimeField(auto_now_add = True)
     # add in author later
     # add in thumbnail later
-    
+
+    def __str__(self):
+        return self.title
+
 # Create your models here.
